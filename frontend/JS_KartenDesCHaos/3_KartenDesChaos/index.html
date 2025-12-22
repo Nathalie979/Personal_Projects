@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0"> <!--muss da sein, um resposive-ness zu gewährleisten-->
+    <title>Karten des Chaos</title>
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+    <header>
+        <h1>🎴 Karten des Chaos</h1>
+        <button id="rules">📜 Spielregeln</button>
+    </header>
+
+<div id="gameElementsBox">
+    <div id="infoScreen">
+        <div id="playerInfo" style="display: none"></div>
+        <div id="introText">
+            <h2>Willkommen bei den Karten des Chaos!</h2>
+            <p>
+                In einem verstaubten Keller unter der Bibliothek findest du ein Spiel… Du entscheidest dich, es auszuprobieren.
+                Als du das Spiel öffnest, wirst du in es hineingesogen.
+            </p>
+            <p>
+                Damit begibst dich auf ein kurzes, aber riskantes Abenteuer. In jeder Runde ziehst du eine Karte – ob du
+                diese verwendest oder abwirfst ist deine Entscheidung. Sei dir aber bewusst, dass von deinen Entscheidungen alles abhängt.
+            </p>
+            <p>
+                Nach zehn Zügen stellt sich dein Schicksal in einem letzten Ereignis. Wähle mit Bedacht –
+                und versuche, das Chaos zu überstehen.
+            </p>
+        </div>
+        <button id="startGame">Spiel starten</button>
+    </div>
+
+
+    <div id="card" style="display: none">
+
+        <div class="karten-inhalt">
+            <div class="karten-titel"><h2 id="cardTitle">Titel</h2></div>
+            <div class="karten-bild"><img id="cardImg" src="" alt="Kartenbild"></div>
+            <div class="karten-beschreibung"><p id="cardDescription"></p></div>
+            <div class="karten-wirkung"><p id="cardEffect"></p></div>
+        </div>
+
+    </div>
+
+    <div id="buttonWrapper">
+        <button id="draw" style="display: none">Ziehe eine Karte</button>
+        <button id="apply" style="display: none">Karte anwenden</button>
+        <button id="discard" style="display: none">Karte wegwerfen</button>
+    </div>
+    <!-- Endauswertung des Spiels bei Tod oder Abschluss der Züge-->
+    <div id="endOfGame" style="display: none">
+    </div>
+</div>
+    <!-- ein Overlay für Dinge wie Tipps und Spielregeln-->
+    <div id="customPrompt" style="display: none;">
+        <div id="customPromptContent">
+            <h3 id="customPromptTitle"></h3>
+            <p id="customPromptText"></p>
+            <div id="customPromptInputContainer"></div>
+            <div id="customPromptButtons"></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

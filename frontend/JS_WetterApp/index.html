@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wetter App</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+</head>
+<body>
+    <h1>Wetter App</h1>
+    <form id="weatherForm">
+        <input type="text" id="cityInput" placeholder="Stadt eingeben">
+        <input type="text" id="zipInput" placeholder="PLZ eingeben">
+        <button onclick="searchWeather()" type="submit">🔍</button>
+    </form>
+    <div id="infoDisplay" style="display: none">
+
+        <h2 id="cityDisplay"></h2>
+        <p id="tempDisplay"></p>
+        <img id="weatherDisplay">
+        <p id="descDisplay"></p>
+    </div>
+    <div id="errorDisplay" style="display: none">
+        <p>Bitte eine Stadt und/oder eine Postleitzahl eingeben!</p>
+        <img id="errorImg" src="icons/sad_cloud.png">
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
