@@ -1,100 +1,234 @@
+:root{
+    --bg1: #0b1220;
+    --bg2: #101b35;
+    --glass: rgba(255,255,255,0.10);
+    --glass2: rgba(255,255,255,0.14);
+    --border: rgba(255,255,255,0.18);
+    --text: rgba(255,255,255,0.92);
+    --muted: rgba(255,255,255,0.70);
+    --accent: #7aa8ff;
+    --accent2: #7cf0c6;
+    --danger: #ff6b8a;
+    --shadow: 0 18px 45px rgba(0,0,0,0.45);
+}
+
+*{
+    box-sizing: border-box;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    background-color: hsl(205, 46%, 90%);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
     margin: 0;
+    min-height: 100vh;
+    color: var(--text);
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    padding: 32px 16px 40px;
+
+    background:
+            radial-gradient(1200px 700px at 20% 10%, rgba(122,168,255,0.25), transparent 60%),
+            radial-gradient(900px 600px at 80% 20%, rgba(124,240,198,0.18), transparent 55%),
+            radial-gradient(1000px 700px at 50% 110%, rgba(255,168,90,0.10), transparent 55%),
+            linear-gradient(180deg, var(--bg1), var(--bg2));
+}
+
+h1{
+    font-size: clamp(2rem, 5vw, 3rem);
+    margin: 6px 0 18px;
+    padding: 14px 18px;
+    border-radius: 18px;
+
+    background: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.06));
+    border: 1px solid var(--border);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    letter-spacing: 0.2px;
 }
 
 #weatherForm{
-    margin:50px 0;
+    width: min(720px, 100%);
+    margin: 10px 0 18px;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    padding: 14px 14px;
+    border-radius: 20px;
+
+    background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.05));
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 #zipInput, #cityInput{
-    padding: 10px;
-    font-size: 1.5rem;
-    font-weight: bold;
-    border: 2px solid rgba(0, 0, 0, 0.31);
-    border-radius: 10px;
-    margin: 10px;
-    width: 300px;
+    width: min(320px, 100%);
+    padding: 12px 14px;
+
+    font-size: 1.05rem;
+    font-weight: 650;
+
+    color: var(--text);
+    background: rgba(10, 16, 30, 0.55);
+
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 14px;
+
+    outline: none;
+    transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease, background 160ms ease;
+}
+
+#zipInput::placeholder, #cityInput::placeholder{
+    color: rgba(255,255,255,0.45);
+    font-weight: 600;
+}
+
+#zipInput:focus, #cityInput:focus{
+    border-color: rgba(122,168,255,0.55);
+    box-shadow: 0 0 0 4px rgba(122,168,255,0.16);
+    background: rgba(10, 16, 30, 0.70);
+    transform: translateY(-1px);
 }
 
 button{
-    padding: 9px;
-    font-size: 1.5rem;
-    background-color: #a4c1ff;
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    font-weight: 800;
+
+    color: rgba(10, 16, 30, 0.90);
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
     border: none;
-    border-radius: 10px;
+    border-radius: 14px;
+
     cursor: pointer;
+    transition: transform 160ms ease, filter 160ms ease, box-shadow 160ms ease;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.35);
 }
 
 button:hover{
-    background-color: #d1e6ff;
+    transform: translateY(-1px);
+    filter: brightness(1.04);
+}
+
+button:active{
+    transform: translateY(0px);
+    filter: brightness(0.98);
 }
 
 #infoDisplay{
-    background: linear-gradient(180deg, rgba(100, 205, 237, 0.58), rgba(239, 175, 67, 0.4));
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.48);
-
-    width:50%;
+    width: min(600px, 100%);
     min-width: 300px;
-    max-width: 600px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 25px;
-    padding: 2rem;
-}
-#errorDisplay{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: rgba(131, 5, 41, 0.71);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#errorImg{
-    margin: 25px;
-    max-width: 200px;
-}
 
+    border-radius: 26px;
+    padding: 22px 18px;
 
-h1{
-    font-size: 3rem;
-    background-color: rgba(255, 255, 255, 0.49);
-    padding: 20px;
-    margin-bottom: 0;
-    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.13), rgba(255,255,255,0.06));
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    margin-top: 8px;
 }
 
 h2{
-    margin-top: 0;
-    margin-bottom: 25px;
+    margin: 4px 0 10px;
+    color: var(--muted);
+    font-weight: 750;
+    letter-spacing: 0.3px;
+    text-align: center;
 }
 
 p{
-    font-size: 1.5rem;
-    margin: 10px 0;
+    font-size: 1.15rem;
+    margin: 8px 0;
+    color: var(--text);
+    text-align: center;
 }
 
 #cityDisplay, #tempDisplay{
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: rgba(0, 0, 0, 0.76);
-    margin-bottom: 25px;
+    font-size: 2.15rem;
+    font-weight: 900;
+    color: var(--text);
+    margin: 6px 0 8px;
+    text-shadow: 0 6px 18px rgba(0,0,0,0.35);
+}
+
+#tempDisplay{
+    font-size: 2.6rem;
+    margin-bottom: 6px;
 }
 
 #descDisplay{
-    font-style: italic;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 10px 0;
+    font-style: normal;
+    font-weight: 750;
+    font-size: 1.05rem;
+    color: var(--muted);
+    margin-top: 10px;
 }
 
 #weatherDisplay{
-    margin:0;
-    max-width: 200px;
+    margin: 8px 0 4px;
+    max-width: 160px;
+    width: 140px;
+    height: auto;
+    filter: drop-shadow(0 12px 18px rgba(0,0,0,0.35));
+}
+
+#errorDisplay{
+    width: min(600px, 100%);
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 22px;
+    padding: 18px 16px;
+
+    background: rgba(255, 107, 138, 0.10);
+    border: 1px solid rgba(255, 107, 138, 0.22);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.35);
+}
+
+#errorDisplay p{
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: rgba(255, 190, 205, 0.95);
+}
+
+#errorImg{
+    margin: 14px 0 2px;
+    max-width: 160px;
+    height: auto;
+    filter: drop-shadow(0 10px 16px rgba(0,0,0,0.35));
+}
+
+@media (max-width: 520px){
+    #weatherForm{
+        padding: 12px;
+        gap: 10px;
+    }
+
+    button{
+        width: 100%;
+    }
+
+    #tempDisplay{
+        font-size: 2.3rem;
+    }
 }

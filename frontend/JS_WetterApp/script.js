@@ -104,19 +104,19 @@ function getWeatherIcon(weathercode) {
     switch (weathercode) {
         case 0:
             iconName = "clear-day.svg";
-            displayCard.style.background = "linear-gradient(180deg, rgba(100, 205, 237, 0.58), rgba(239, 175, 67, 0.4))";
+            displayCard.style.background = "linear-gradient(135deg, rgba(96, 210, 255, 0.55), rgba(255, 199, 107, 0.35))";
 
             break;
         case 1:
         case 2:
         case 3:
             iconName = "partly-cloudy-day.svg";
-            displayCard.style.background = "linear-gradient(180deg, rgba(66, 154, 181, 0.58), rgba(188, 180, 171, 0.4))";
+            displayCard.style.background = "linear-gradient(135deg, rgba(90, 170, 210, 0.55), rgba(190, 200, 215, 0.30))";
             break;
         case 45:
         case 48:
             iconName = "fog.svg";
-            displayCard.style.background = "linear-gradient(180deg, rgba(150, 154, 156, 0.58), rgba(239, 236, 232, 0.4))";
+            displayCard.style.background = "linear-gradient(135deg, rgba(150, 160, 170, 0.55), rgba(235, 235, 235, 0.28))";
             break;
         case 51:
         case 53:
@@ -132,7 +132,7 @@ function getWeatherIcon(weathercode) {
         case 81:
         case 82:
             iconName = "rain.svg";
-            displayCard.style.background = "linear-gradient(180deg, rgba(5, 44, 142, 0.58), rgba(20, 70, 198, 0.4))";
+            displayCard.style.background = "linear-gradient(135deg, rgba(10, 70, 170, 0.55), rgba(40, 120, 220, 0.30))";
             break;
         case 71:
         case 73:
@@ -141,12 +141,13 @@ function getWeatherIcon(weathercode) {
         case 85:
         case 86:
             iconName = "snow.svg";
-            displayCard.style.background = "linear-gradient(180deg, rgba(233, 240, 243, 0.58), rgba(141, 199, 241, 0.4))";
+            displayCard.style.background = "linear-gradient(135deg, rgba(235, 245, 255, 0.60), rgba(145, 205, 245, 0.30))";
             break;
         case 95:
         case 96:
         case 99:
             iconName = "thunderstorms.svg";
+            displayCard.style.background = "linear-gradient(135deg, rgba(70, 40, 120, 0.60), rgba(20, 20, 40, 0.35))";
             break;
         default:
             iconName = "unknown.svg"; // Füge ein Icon für unbekannte Wettercodes hinzu
