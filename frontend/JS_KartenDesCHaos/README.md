@@ -1,46 +1,95 @@
-# 🎴 Projekt 3 – Karten des Chaos
+# Karten des Chaos – Frontend Projekt
 
-## 🧙 Projektbeschreibung:
+## Projektkontext
+Dieses Projekt ist ein **Frontend-Studienprojekt** und basiert auf einer vorgegebenen Aufgabenstellung.  
+Ziel war die Umsetzung und Erweiterung einer bestehenden, fehlerhaften Webanwendung mit **HTML, CSS und JavaScript**.
 
-In einem verstaubten Keller unter der Bibliothek findest du ein Spiel… oder eher: ein Relikt. 
-Es heißt „Karten des Chaos“. Beim Ziehen jeder Karte entfesselt sich eine unbekannte Macht – Segen, Fluch oder gar nichts. 
-Doch nur, wer den Code der Karten durchschaut, kann das Spiel kontrollieren.
+Der Fokus liegt auf **Debugging, JavaScript-Logik, DOM-Manipulation, Styling und responsivem Layout**.
 
-Momentan aber scheint das Chaos die Oberhand zu haben: Die Karten ziehen sich nicht korrekt, 
-die Texte sind durcheinander, und ihre Effekte bleiben aus.
+---
 
-## 🎯 Ziel des Projekts:
+## Aufgabenstellung
+Ausgangsbasis war ein unvollständiges bzw. fehlerhaftes Kartenspiel („Karten des Chaos“).
 
-Programmiere eine Anwendung, bei der beim Klick auf einen Button zufällig eine Karte gezogen und deren Inhalt angezeigt 
-wird: Titel, Beschreibung und Wirkung. Du kannst das Spiel weiterentwickeln – z. B. mit Animationen, mehreren Kartentypen, 
-Spezialeffekten oder der Möglichkeit, gleich mehrere Karten zu ziehen.
+Die Anwendung sollte:
+- eine zufällige Karte ziehen
+- Titel, Beschreibung und Wirkung korrekt anzeigen
+- fehlerhafte Logik reparieren
+- kreativ erweitert und visuell gestaltet werden
 
-## 🛠️ Deine Aufgaben:
+Die vollständige Angabe ist im Repository enthalten.
 
-### 🐞 1. Debugging  ✅
-- Repariere die defekte Logik beim Kartenziehen (Math-Fehler, DOM, IDs).
-- Kommentiere jede relevante Änderung.
+---
 
-### ✨ 2. Erweiterung & kreative Gestaltung
-- Entwickle mindestens zwei neue Features, z.B.:
-  - Neue Karten ziehen
-  - Verschiedene Kartentypen mit Farben oder Effekten (z.B. Buff / Fluch)
-  - „Ziehe 3 Karten“-Modus
-  - Animation oder Soundeffekte bei bestimmten Karten
-- Pflicht:
-  - Erstelle mindestens eine eigene Funktion mit Parametern, z.B. zur Darstellung oder Bewertung einer Karte.
-  - Verwende Schleifen, um mehrere Karten gleichzeitig zu verarbeiten oder zu filtern.
-  - Verwende Verzweigungen, z.B. zum Unterscheiden von Kartentypen.
-  - Wenn möglich: Nutze Rest-Parameter, z.B. zur Kartensammlung oder Effektsteuerung.
+## Projektziel
+- Debugging bestehender JavaScript-Logik
+- saubere DOM-Ansteuerung
+- Erweiterung der Spiellogik durch eigene Features
+- visuelle Gestaltung mit CSS
+- responsive Darstellung für Desktop und Mobile
 
-### 🎨 3. Styling
-- Dein Layout soll das magische Chaos visualisieren: Karten, mystische Effekte, Farben oder Texteffekte.
-- Responsive Darstellung für Desktop und Mobilgeräte ist Pflicht.
+---
 
-### 🧠 4. Reflexion
+## Meine Leistungen
 
-#### Schreibe eine kurze Reflexion:
-- Was war die größte Herausforderung beim Debuggen?
-- Was hast du bei der Erweiterung gelernt?
-- Was war deine kreative Idee hinter deinem Design?
+### 1. Debugging
+- Behebung von Logikfehlern beim Kartenziehen
+- Korrektur von Math- und Index-Fehlern
+- Anpassung fehlerhafter DOM-Zugriffe
+- Verbesserung des Spielflusses
 
+---
+
+### 2. Erweiterungen
+- vollständiger Spielablauf mit Start-, Spiel- und Endzustand
+- Karten können angewendet oder verworfen werden
+- Zustandsverwaltung über mehrere Spielzüge
+- finale Auswertung nach definierten Zügen
+- Overlay-System für Regeln, Hinweise und Events
+- eigene Funktionen mit Parametern
+- Einsatz von Schleifen und Verzweigungen zur Kartenlogik
+
+---
+
+### 3. Frontend & Styling
+- vollständiges visuelles Redesign
+- thematisch passendes „magisches“ UI
+- Kartenlayout mit Animationen
+- klare visuelle Trennung von Spielzuständen
+- responsive Umsetzung für kleinere Displays
+
+---
+
+## Technischer Fokus
+- Vanilla JavaScript (keine Frameworks)
+- DOM-Manipulation
+- Event Handling
+- Zustandslogik im Spielablauf
+- CSS Custom Properties (Variablen)
+- Animationen und Transitions
+- Responsive Design
+
+---
+
+## Projektstruktur
+- `index.html` – Struktur der Anwendung
+- `style.css` – Layout, Farben, Animationen, Responsiveness
+- `script.js` – Spiellogik, Kartenmechaniken, Interaktionen
+- `README.md` – Aufgabenstellung und Reflexion
+- `/Bilder` – alle verwendeten Bilder
+
+---
+
+## Hinweis zur Einordnung
+Dieses Projekt ist eine **Frontend-Übungsarbeit**.  
+Es dient der Anwendung und Vertiefung von **JavaScript- und CSS-Kenntnissen** und ist **kein professionell veröffentlichtes Spiel**.
+
+---
+
+## Projektstatus
+Abgeschlossen.
+
+---
+
+> Hinweis:  
+> Die originale Aufgabenbeschreibung ist im Repository enthalten und bildet die Grundlage dieses Projekts.
