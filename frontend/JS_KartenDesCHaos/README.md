@@ -91,5 +91,9 @@ Abgeschlossen.
 
 ---
 
+## Kontext
+
+Umgesetztes Frontend-Projekt im  2. Semester Design of Digital Products | Kurs Introduction to Scripting
+
 > Hinweis:  
 > Die originale Aufgabenbeschreibung ist im Repository enthalten und bildet die Grundlage dieses Projekts.
