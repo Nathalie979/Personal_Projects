@@ -84,5 +84,9 @@ Der Schwerpunkt liegt auf **Logik und Struktur**, nicht auf grafischer Darstellu
 
 ---
 
+## Kontext
+
+Umgesetztes Python-Projekt im  1. Semester Design of Digital Products | Kurs Grundlagen der Informatik
+
 ## Projektstatus
 Abgeschlossen.
