@@ -68,6 +68,11 @@ Der Schwerpunkt lag auf Funktionalität, Benutzerfeedback und sauberem Frontend-
 Dieses Projekt ist eine **Frontend-Übung** und dient der Festigung grundlegender Webtechnologien.  
 Es ist **keine vollständige Wetterplattform** und enthält **keine serverseitige Logik**.
 
+
+## Kontext
+
+Umgesetztes Frontend-Projekt im  3. Semester Design of Digital Products | Kurs Web-Frontend-Development
+
 ---
 
 ## Projektstatus
