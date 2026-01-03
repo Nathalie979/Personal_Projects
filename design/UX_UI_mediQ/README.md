@@ -8,8 +8,12 @@ Das Projekt wurde im Rahmen eines Studienprojekts als Gruppenarbeit umgesetzt un
 
 Der Schwerpunkt liegt auf **User Research, Konzeption, Prototyping und Usability Testing**.
 
+Anbei der Link zum Figma-File der Case-Study:
+https://www.figma.com/proto/NpCrpuBP0Jkw5mWvQvdRON/mediQ---Visual-Design?page-id=2885%3A1001&node-id=2885-1002&p=f&viewport=549%2C301%2C0.04&t=1MCd5MWodj7AL9oV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2885%3A1002&hotspot-hints=0
+
+
 > Hinweis:  
-> Externe Links (z. B. zu Assets oder Rohdateien) funktionieren nur in der heruntergeladenen Version der Dokumente und nicht in der GitHub-Vorschau.
+> Externe Links funktionieren nur in der heruntergeladenen Version der Dokumente und nicht in der GitHub-Vorschau.
 ---
 
 ## Aufgabenstellung
