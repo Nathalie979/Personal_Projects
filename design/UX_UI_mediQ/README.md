@@ -11,6 +11,8 @@ Der Schwerpunkt liegt auf **User Research, Konzeption, Prototyping und Usability
 Anbei der Link zum Figma-File der Case-Study:
 https://www.figma.com/proto/NpCrpuBP0Jkw5mWvQvdRON/mediQ---Visual-Design?page-id=2885%3A1001&node-id=2885-1002&p=f&viewport=549%2C301%2C0.04&t=1MCd5MWodj7AL9oV-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=2885%3A1002&hotspot-hints=0
 
+Anbei der Link zum klickbaren Prototypen:
+https://www.figma.com/proto/NpCrpuBP0Jkw5mWvQvdRON/mediQ---Visual-Design?page-id=0%3A1&node-id=2249-336&p=f&viewport=778%2C306%2C0.12&t=ZUAkcWurfxcfXfAG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=2249%3A346&show-proto-sidebar=1
 
 > Hinweis:  
 > Externe Links funktionieren nur in der heruntergeladenen Version der Dokumente und nicht in der GitHub-Vorschau.
